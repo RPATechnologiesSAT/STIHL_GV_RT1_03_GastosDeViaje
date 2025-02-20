@@ -1,0 +1,58 @@
+﻿{"Settings": [
+	   {
+		    "_Importante" : "'OrchestratorFolder' será usada como discriminador para recoger los Assets y credenciales. Si no existe en 'Settings', ni los assets ni las credentials se tendrán en cuenta ",
+            "Name": "OrchestratorFolder",
+            "Value": "Shared",
+            "Description": "Carpeta Orquestador" 
+        },
+	    {
+            "Name": "OrchestratorQueueName",
+            "Value": "QueueTest",
+            "Description": "Cola de ejecución de la que se recogerán los items que van a ser tratados."
+        },
+        {
+            "Name": "ExScreenshotsFolderPath",
+            "Value": "Exceptions_Screenshots",
+            "Description": "Carpeta para el almacenamiento de capturas de pantalla de error"
+        },
+        {
+            "Name": "DebugMode",
+            "Value": "True",
+            "Description": "Booleano en tipo string para realizar o evitar ciertas acciones segun el modo de ejecución. Por defecto, en true, no se ejecutará el cleaning Desktop."
+        },
+		{
+            "Name": "SistemaSAP",
+            "Value": "P10-200 : ONE STIHL - Production ERP",
+            "Description": "Sistema al que se debe acceder cuando se abre SAP BC."
+        },
+		{
+			"Name": "TransaccionSociedad",
+            "Value": "FAGLL03",
+            "Description": "Transaccion encargada de acceder a la cuenta sociedad ES."
+		},
+		{
+			"Name": "CuentaMayor",
+            "Value": "25880260",
+            "Description": "Valor a introducir en filtro de transacción FAGLL03 en el apartado cuenta mayor."
+		},
+		{
+			"Name": "Layout",
+            "Value": "/VISA",
+            "Description": "Layout en filtro de transacción FAGLL03."
+		}
+    ],
+
+    "Assets": [
+        {
+            "Name": "NombreAssetEnOrquestador",
+            "Description": "Descripcion del Asset"
+        }
+    ],
+ 
+    "Credentials": [
+        {
+            "Name": "NombreCredencialEnOrquestador",
+            "OrchestratorFolder": "Shared"
+        }
+    ]
+}
