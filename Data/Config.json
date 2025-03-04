@@ -31,6 +31,11 @@
             "Description": "Transaccion encargada de acceder a la cuenta sociedad ES."
 		},
 		{
+			"Name": "TransaccionLiberar",
+            "Value": "F-03",
+            "Description": "Transaccion encargada de acceder a la transacción para liberar compensaciones."
+		},
+		{
 			"Name": "CuentaMayor",
             "Value": "25880260",
             "Description": "Valor a introducir en filtro de transacción FAGLL03 en el apartado cuenta mayor."
@@ -44,15 +49,9 @@
 
     "Assets": [
         {
-            "Name": "NombreAssetEnOrquestador",
-            "Description": "Descripcion del Asset"
+            "Name": "NumeroSecuencial",
+            "Description": "Número secuencial encargado de numerar las asignaciones de los usuarios."
         }
-    ],
- 
-    "Credentials": [
-        {
-            "Name": "NombreCredencialEnOrquestador",
-            "OrchestratorFolder": "Shared"
-        }
+
     ]
 }

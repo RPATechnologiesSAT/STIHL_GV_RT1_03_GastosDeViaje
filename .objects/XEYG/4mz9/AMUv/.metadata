@@ -1,0 +1,13 @@
+﻿{
+  "Name": "P10 (1) 200 Cuentas de mayor, lista de partid",
+  "Type": "Screen",
+  "Id": "AMUvhKFf8k6Nb8M7NcQlGQ",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/AMUvhKFf8k6Nb8M7NcQlGQ",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/4mz9sTXo7ECa_XogWqlmsQ",
+  "Created": "2025-02-28T12:21:58.6537194Z",
+  "Updated": "2025-02-28T12:21:58.6537194Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

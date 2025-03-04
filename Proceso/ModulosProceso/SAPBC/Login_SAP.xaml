@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,2624</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1298,2185</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_SAP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,14 +105,14 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1308,2559" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1308,2080" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1246,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'Login_SAP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654,1623" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1246,1655" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Login_SAP" sap:VirtualizedContainerService.HintSize="616,1395" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
@@ -151,7 +151,7 @@
                             <uix:NClick.Target>
                               <uix:TargetAnchorable CVScreenId="0ffb5c06-747e-470f-b44a-0374474ac4d1" CvElementArea="1140, 640, 143, 28" CvTextArea="1148, 647, 126, 13" CvTextArgument="Acceder al sistema" CvType="Button" DesignTimeRectangle="1141, 641, 141, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Acceder al sistema Resaltado' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Acceder al sistema Resaltado' role='push button' automationid='' check:text='Acceder al sistema Resaltado' /&gt;" Guid="7895ef0d-cfa0-432a-8391-c184469b7b59" InformativeScreenshot="cd24e4b61f100a69205e3b50c672166b.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='Selección de sistema' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="0ffb5c06-747e-470f-b44a-0374474ac4d1" CvElementArea="1140, 640, 143, 28" CvTextArea="1148, 647, 126, 13" CvTextArgument="Acceder al sistema" CvType="Button" DesignTimeRectangle="1149, 646, 125, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Acceder al sistema Resaltado' role='push button' /&gt;&lt;ctrl name='Acceder al sistema' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Acceder al sistema Resaltado' role='push button' /&gt;&lt;ctrl name='Acceder al sistema' role='text' automationid='' check:text='Acceder al sistema' /&gt;" Guid="21e596af-1530-489c-a3c8-3364c6262321" SearchSteps="Selector, FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -170,7 +170,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NCheckState DisplayName="Check App State 'P10/200 Índice'" sap:VirtualizedContainerService.HintSize="954,620" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="896715ec-5e25-43c0-ada9-77c3c389efdb" Timeout="15" Version="V4">
+                                  <uix:NCheckState DisplayName="Check App State 'P10/200 Índice'" sap:VirtualizedContainerService.HintSize="954,620" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="896715ec-5e25-43c0-ada9-77c3c389efdb" Timeout="60" Version="V4">
                                     <uix:NCheckState.IfExists>
                                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -213,7 +213,7 @@
                             <uix:NClick.Target>
                               <uix:TargetAnchorable CVScreenId="39345c20-cfad-4583-ad93-db80c081d2d5" CvElementArea="1268, 6, 20, 20" CvType="CloseButton" DesignTimeRectangle="1273, 7, 11, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='_imClose' /&gt;&lt;ctrl name='' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='_imClose' /&gt;&lt;ctrl name='' role='text' automationid='' check:text='' /&gt;" Guid="3ca69264-38a5-496f-b0ce-b83b421fd2e3" InformativeScreenshot="dd013738c9502c99fb8473b3725d7039.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='Selección de sistema' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="39345c20-cfad-4583-ad93-db80c081d2d5" CvElementArea="1268, 6, 20, 20" CvType="CloseButton" DesignTimeRectangle="1265, 3, 26, 26" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='_imClose' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='_imClose' role='push button' check:text='' /&gt;" Guid="85a4981c-6b80-4d6d-8d99-c9e2aa3745b9" SearchSteps="Selector, FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>

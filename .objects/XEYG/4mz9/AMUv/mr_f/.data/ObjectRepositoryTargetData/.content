@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gkbWiMtilE-pA7j3AJwmwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="76993ea1-5e7a-4122-b32c-7e6e44777304" CvTextArea="42, 19, 297, 16" CvTextArgument="Iniciar Pls, cuentas de mayor (nuevo) (FAGLL03)" CvType="Text" DesignTimeRectangle="10, 10, 580, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Iniciar PIs, cuentas de mayor (nuevo) (FAGLL03)' role='menu item' /&gt;" Guid="da7b4926-2f11-4818-b2af-b4132340239b" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4559af3bbebab260892d9ad10b670dbe.png" xmlns="">08GdIoLs9bE2af8yUPv1FuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

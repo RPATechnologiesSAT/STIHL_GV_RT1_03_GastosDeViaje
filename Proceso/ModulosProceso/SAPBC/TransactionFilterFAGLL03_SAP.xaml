@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TransactionFilter_SAP" this:TransactionFilter_SAP.in_str_CuentaMayor="25880260" this:TransactionFilter_SAP.in_str_Layout="/VISA" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TransactionFilter_SAP" this:TransactionFilter_SAP.in_str_CuentaMayor="25880260" this:TransactionFilter_SAP.in_str_Layout="/VISA" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_str_CuentaMayor" Type="InArgument(x:String)" />
     <x:Property Name="in_str_Layout" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,2529</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1394,2553</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TransactionFilter_SAP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,49 +109,49 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TransactionFilter_SAP" sap:VirtualizedContainerService.HintSize="1212,2464" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TransactionFilter_SAP" sap:VirtualizedContainerService.HintSize="1212,2488" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1150,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'TransactionFilter_SAP -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1150,2039" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1150,2063" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1112,1801" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="1112,1803" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="1050,1713" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ead0da86-5046-47dc-9367-8d1363b69546" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="1050,1715" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ead0da86-5046-47dc-9367-8d1363b69546" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1399" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1401" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Número de la…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Text="[in_str_CuentaMayor]" Version="V4">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cuenta mayor'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Text="[in_str_CuentaMayor]" Version="V4">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="325, 220, 98, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/ctxtSD_SAKNR-LOW' /&gt;" Guid="b9d961d9-afe7-44f8-9525-f835c88ab5d3" ImageBase64="" InformativeScreenshot="d41b90da13a056ec26353a0199ac82d5.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '/VISA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Version="V4">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '/VISA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Text="/VISA" Version="V4">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="325, 974, 116, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/ctxtPA_VARI' /&gt;" Guid="857745df-9453-49a9-8d60-3f974ffbd166" ImageBase64="" InformativeScreenshot="2f4e290c0c709f63a0ee83427c50d259.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ejecutar'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ejecutar'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Version="V4">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="1857, 1003, 54, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(3)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='tbar[1]/btn[8]' /&gt;" Guid="b6ec709f-c95d-4d0a-b3bb-6531eaa14329" ImageBase64="" InformativeScreenshot="fa8025282403b26741d4c4f36df30382.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable DesignTimeRectangle="1857, 1003, 54, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='tbar[1]/btn[8]' text='Ejecutar' /&gt;" Guid="7ee76bbd-76e1-44c7-b2e7-e3098cbe0600" InformativeScreenshot="d77f492da81578d5b7d3a943d5ef6c09.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' title='P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NCheckState DisplayName="Check App State 'SAPGUI.GridViewCtrl.1'" sap:VirtualizedContainerService.HintSize="954,622" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Timeout="120" Version="V4">
+                  <uix:NCheckState DisplayName="Aparecen los datos del layout?" sap:VirtualizedContainerService.HintSize="954,622" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ead0da86-5046-47dc-9367-8d1363b69546" Timeout="120" Version="V4">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
@@ -169,12 +169,12 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Error al acceder al Layout con los filtros marcados&quot;]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Error al acceder al Layout con los filtros marcados&quot;]" />
                         <Throw Exception="[new SystemException(&quot;Error al acceder al Layout con los filtros marcados&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="19, 303, 1889, 669" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(3)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' /&gt;" Guid="4b470702-ec1d-45d8-acc1-4b80fbc1568f" ImageBase64="" InformativeScreenshot="5ae3cceb7220840e1c3e937dd2f56906.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable DesignTimeRectangle="19, 303, 1889, 669" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(*)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' /&gt;" Guid="4b470702-ec1d-45d8-acc1-4b80fbc1568f" InformativeScreenshot="c95501d4696e75e8b721ae8ba1f15fe6.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (*) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
                 </Sequence>
@@ -186,6 +186,30 @@
           </uix:NApplicationCard>
         </Sequence>
       </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1116,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Exception: Error al acceder al Layout con los filtros marcados&quot;]" />
+              <Throw Exception="[new SystemException(&quot;Error al acceder al Layout con los filtros marcados&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_2" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
     </TryCatch>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1150,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando módulo 'TransactionFilter_SAP -----&quot;]" />
   </Sequence>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Hacer click transacción",
+  "Type": "Element",
+  "Id": "mr_ftQBcuk2WpPUUZ3Nyjg",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/mr_ftQBcuk2WpPUUZ3Nyjg",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/AMUvhKFf8k6Nb8M7NcQlGQ",
+  "Created": "2025-02-28T12:21:59.013366Z",
+  "Updated": "2025-02-28T12:21:59.013366Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

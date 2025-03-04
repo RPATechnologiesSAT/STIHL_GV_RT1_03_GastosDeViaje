@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,2747</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1394,4934</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadFile_SAP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -47,6 +47,8 @@
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.Security</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -109,47 +111,51 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="788,2682" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="848,4869" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_FileName" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="726,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'DownloadFile_SAP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="726,2257" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="786,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'DownloadFile_SAP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="786,4279" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="DownloadFile_SAP" sap:VirtualizedContainerService.HintSize="688,1997" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="DownloadFile_SAP" sap:VirtualizedContainerService.HintSize="748,4019" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="626,1909" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="686,3931" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1595" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,3617" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Selecc…'" sap:VirtualizedContainerService.HintSize="530,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Selecc…'" sap:VirtualizedContainerService.HintSize="590,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V4">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="20, 305, 25, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(3)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="1b92d656-3288-4199-b35c-caab249b46ab" InformativeScreenshot="a66bba01dac1faa62c6c6d7123532044.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable DesignTimeRectangle="20, 305, 25, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(*)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="1b92d656-3288-4199-b35c-caab249b46ab" InformativeScreenshot="a66bba01dac1faa62c6c6d7123532044.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (*) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: sapguiserver.exe" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2cc2791f-c86f-4283-b8a4-10704522735a" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: sapguiserver.exe" sap:VirtualizedContainerService.HintSize="590,595" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="2cc2791f-c86f-4283-b8a4-10704522735a" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,270" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,27 +170,39 @@
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
                     <uix:NApplicationCard.TargetApp>
-                      <uix:TargetApp Area="23, 311, 192, 270" FilePath="C:\Program Files\SAP\FrontEnd\SAPGUI\sapguiserver.exe" IconBase64="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" InformativeScreenshot="f0442a0146fc7b0f02e629b95a00bb53.png" Selector="&lt;wnd app='sapguiserver.exe' cls='#32768' idx='*' /&gt;" Version="V1" />
+                      <uix:TargetApp Area="23, 311, 192, 270" IconBase64="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" InformativeScreenshot="f0442a0146fc7b0f02e629b95a00bb53.png" Selector="&lt;wnd app='sapguiserver.exe' cls='#32768' idx='*' /&gt;" Version="V1" />
                     </uix:NApplicationCard.TargetApp>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10(3)/200 Export As" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: P10(3)/200 Export As" sap:VirtualizedContainerService.HintSize="590,784" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,270" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,461" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <uix:NSelectItem DisplayName="Select Item 'Fichero separado por co…'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Fichero separado por coma (*.csv)" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="3">
+                                <x:String>Microsoft Excel (*.xlsx)</x:String>
+                                <x:String>Fichero separado por coma (*.csv)</x:String>
+                                <x:String>Excel - en formato XXL hasta ahora(Obsoletos)</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="172, 125, 386, 25" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;sap id='usr/ssubSUB_CONFIGURATION:SAPLSALV_GUI_CUL_EXPORT_AS:0512/cmbGS_EXPORT-FORMAT' /&gt;" Guid="83f421c3-9333-4370-bcc9-e6f9262e80d5" InformativeScreenshot="db160b9116dc46ebda4e7d4c7a5292b5.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' title='P10(*)/200 Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Exportar a...'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="622, 244, 89, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="0c70e933-f2f3-42af-bd93-a37c87c0f186" InformativeScreenshot="3e874253f899d4d415e2ef637c3f7eb1.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
@@ -194,50 +212,87 @@
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
                     <uix:NApplicationCard.TargetApp>
-                      <uix:TargetApp Area="11, 181, 800, 275" FilePath="C:\Program Files\SAP\FrontEnd\SAPGUI\sapguiserver.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG8SURBVFhH7ZPNS8JgHMd3jk7SeQbZIcyyrpX9H9FVQi081inFKPAlzQgLRCPCZEpEnYKKlKLEl14Nj73NIgXrUkd/7XHPbFLWpqGXfeCLDIaf7/PdRkhISDSdt3CrjElbk9JC7K6Ppie9TrqRmfY66Kvg8HkhLFMSbp8lTzrPoFHpcCXB4TM9Poe6BkqPoJEFFIzc5jPnsiElK0c0qoDClUDyp1uqX4PVLFwBuTMF2mAa9MFL0G9csAniiLjWMb8a1xGQjjhPXpqdZmYfxNovuALt83HIv35AvUSSGVBPBYC0xcpy5uQvNKX6mp1PuQDTOFeovUCxWIRI4gaUEx4gZyOMPAWd5dn7hrDuO5UF3vHfiQPJ92LXoBpfxHL25PZqs/P5jwKH8TSoDG4gLfulk3OzP1A9v8sRFQVEvgPo5Eiu1C2AfOagPLvdZ87eUerqs/PhCsgdCdD6o2BY3gG9Z1tQxpa2oNu4AiSWs7Ob/56dD1egFOspkHNR5jkKDLrXelIx+z3VK1yOqChQY/DstGg5ot4CePasqNn51FOAm13wC/cTx4GRqH/VlKklm2vGpKBPTUJCQqIqBPEJehJ6L6S9cUMAAAAASUVORK5CYII=" InformativeScreenshot="85df3c458a2d2616ccce4a3a94fd9359.png" Selector="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Export As' idx='*' /&gt;" Title="P10(3)/200 Export As" Version="V1" />
+                      <uix:TargetApp Area="11, 181, 800, 275" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG8SURBVFhH7ZPNS8JgHMd3jk7SeQbZIcyyrpX9H9FVQi081inFKPAlzQgLRCPCZEpEnYKKlKLEl14Nj73NIgXrUkd/7XHPbFLWpqGXfeCLDIaf7/PdRkhISDSdt3CrjElbk9JC7K6Ppie9TrqRmfY66Kvg8HkhLFMSbp8lTzrPoFHpcCXB4TM9Poe6BkqPoJEFFIzc5jPnsiElK0c0qoDClUDyp1uqX4PVLFwBuTMF2mAa9MFL0G9csAniiLjWMb8a1xGQjjhPXpqdZmYfxNovuALt83HIv35AvUSSGVBPBYC0xcpy5uQvNKX6mp1PuQDTOFeovUCxWIRI4gaUEx4gZyOMPAWd5dn7hrDuO5UF3vHfiQPJ92LXoBpfxHL25PZqs/P5jwKH8TSoDG4gLfulk3OzP1A9v8sRFQVEvgPo5Eiu1C2AfOagPLvdZ87eUerqs/PhCsgdCdD6o2BY3gG9Z1tQxpa2oNu4AiSWs7Ob/56dD1egFOspkHNR5jkKDLrXelIx+z3VK1yOqChQY/DstGg5ot4CePasqNn51FOAm13wC/cTx4GRqH/VlKklm2vGpKBPTUJCQqIqBPEJehJ6L6S9cUMAAAAASUVORK5CYII=" InformativeScreenshot="85df3c458a2d2616ccce4a3a94fd9359.png" Selector="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Export As' idx='*' /&gt;" Title="P10(3)/200 Export As" Version="V1" />
                     </uix:NApplicationCard.TargetApp>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10(3)/200 Grabar fichero" sap:VirtualizedContainerService.HintSize="530,1202" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="eaafb091-5d04-4254-86a0-990391a98650" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10(3)/200 Grabar fichero" sap:VirtualizedContainerService.HintSize="590,1959" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="eaafb091-5d04-4254-86a0-990391a98650" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,886" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,1643" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'C:\\TEMP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[Environment.CurrentDirectory + (&quot;/Data/Temp&quot;)]" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'C:\\TEMP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[Environment.CurrentDirectory + (&quot;/Data/Temp&quot;)]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="127, 67, 476, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="23fadccf-f20b-4860-a6d9-9736a09e2989" InformativeScreenshot="a34f89cd6ac22f4ca658cf1c0f69e959.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign sap:VirtualizedContainerService.HintSize="494,114" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[out_str_FilePath]</OutArgument>
+                              <OutArgument x:TypeArguments="x:String">[str_FileName]</OutArgument>
                             </Assign.To>
                             <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">["FAGLL03_" + now.ToString("dd-MM-yyyy") + ".xlsx"]</InArgument>
+                              <InArgument x:TypeArguments="x:String">["FAGLL03_" + now.ToString("dd-MM-yyyy") + ".csv"]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT_20250212_114425.…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[out_str_FilePath]" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT_20250212_114425.…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[str_FileName]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="127, 96, 476, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="5e4da0e7-2c2e-421b-b04e-7d3acb04cffb" InformativeScreenshot="940930536890fd9e37e2eed10c4b2a3a.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crear'" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crear'" sap:VirtualizedContainerService.HintSize="494,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="583, 157, 37, 23" DesignTimeScaleFactor="1" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="2d48434e-d4a6-44ae-8e82-ddd521f9f641" InformativeScreenshot="bf8ce8760a0bfe6e0518dd0490e9b317.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
+                          <uix:NCheckState DisplayName="Check App State 'P10(1)/200 Grabar fiche…'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="494,521" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cerrar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable CVScreenId="72405240-4e4e-43c2-91d3-f02a4f1da1a6" CvElementArea="654, 10, 19, 18" CvType="CloseButton" DesignTimeRectangle="652, 7, 24, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Cerrar' role='push button' /&gt;" Guid="ca7e85bc-ffbc-49ec-8fb5-7e5e80ac42f3" InformativeScreenshot="a3a4aaebdd7a008a96fa9fbe502c192f.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(1)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 683, 188" DesignTimeScaleFactor="1" Guid="a21e1d41-7c25-417f-abe2-172408b3c5a6" InformativeScreenshot="84143179ac45d9575c5e9e3f5ffc709a.png" ScopeSelectorArgument="&lt;wnd app='*.exe' title='P10(*)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                          <Assign sap:VirtualizedContainerService.HintSize="494,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[out_str_FilePath]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[("Data/Temp/") + str_FileName]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="494,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
                         </Sequence>
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
@@ -255,7 +310,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="692,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="752,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -270,6 +325,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="726,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando módulo 'DownloadFile_SAP' -----&quot;]" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="786,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="EXCEL.EXE" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="786,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando módulo 'DownloadFile_SAP' -----&quot;]" />
   </Sequence>
 </Activity>

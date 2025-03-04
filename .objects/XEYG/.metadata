@@ -1,0 +1,12 @@
+﻿{
+  "Name": "P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vista LM",
+  "Type": "App",
+  "Id": "XEYGMyNsBkuR7CBYHmD33g",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/XEYGMyNsBkuR7CBYHmD33g",
+  "Created": "2025-02-28T12:21:58.5815151Z",
+  "Updated": "2025-02-28T12:21:58.5815151Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
