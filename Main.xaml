@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1394,812</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1793,812</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Framework_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -133,7 +133,7 @@
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="Resumen Proceso:" DisplayName="STIHL_GV_RT1_03_GastosDeViaje" sap:VirtualizedContainerService.HintSize="634,688" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="Resumen Proceso: Accederemos a un documento compartido (empleado.xlsx). Este fichero nos servirá para validar los empleados que pueden tener gastos compensables. A continuación, accedemos a la transacción FAGLL03 para comprobar que gastos si son compensables. Se creará una asignación y accederemos a la transacción con las asignaciones dadas. " DisplayName="STIHL_GV_RT1_03_GastosDeViaje" sap:VirtualizedContainerService.HintSize="634,729" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -243,9 +243,19 @@
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmail - Invoke Workflow File (Proceso\ModulosProceso\Outlook\SendEmail.xaml)" sap:VirtualizedContainerService.HintSize="451,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\Outlook\SendEmail.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_NombreProyecto">Proceso Gastos de Viaje</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_MensajeBody" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_Destinatarios" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_FicheroGastosNoCompensables" />
+              <InArgument x:TypeArguments="x:String" x:Key="in_MensajeBody" xml:space="preserve">Hola, 
+
+Adjuntamos fichero excel con el detalle de cargos en su tarjeta de crédito pendientes de justificar. 
+
+De acuerdo a la normativa interna, las liquidaciones de gastos de viaje deben realizarse de una forma actualizada.
+
+Aquellos gastos que no hayan sido justificados en un plazo máximo de 60 días, serán descontados de la nómina. 
+
+En caso de duda con alguno de los cargos, contacta por favor con el departamento de contabilidad. 
+
+Un saludo, 
+Robot RPA</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FicheroGastosNoCompensables">Data\Temp\GastosNoCompensables.xlsx</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\CloseAllApplications.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="451,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Framework\CloseAllApplications.xaml">

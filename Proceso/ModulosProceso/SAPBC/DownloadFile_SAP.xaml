@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1394,4934</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1054,4934</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadFile_SAP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -144,7 +144,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Selecc…'" sap:VirtualizedContainerService.HintSize="590,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Seleccionar todo " sap:VirtualizedContainerService.HintSize="590,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="20, 305, 25, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(*)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="1b92d656-3288-4199-b35c-caab249b46ab" InformativeScreenshot="a66bba01dac1faa62c6c6d7123532044.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (*) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -161,7 +161,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Exportar Como Hoja Cálculo" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl name='Hoja de cálculo...' /&gt;" Guid="dddc6d4d-dc66-4279-a8bc-c2a3f40b033d" SearchSteps="Selector" />
                             </uix:NClick.Target>
@@ -191,7 +191,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NSelectItem DisplayName="Select Item 'Fichero separado por co…'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Fichero separado por coma (*.csv)" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
+                          <uix:NSelectItem DisplayName="Select Item - Fichero CSV" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Fichero separado por coma (*.csv)" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
                             <uix:NSelectItem.Items>
                               <scg:List x:TypeArguments="x:String" Capacity="3">
                                 <x:String>Microsoft Excel (*.xlsx)</x:String>
@@ -203,7 +203,7 @@
                               <uix:TargetAnchorable DesignTimeRectangle="172, 125, 386, 25" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;sap id='usr/ssubSUB_CONFIGURATION:SAPLSALV_GUI_CUL_EXPORT_AS:0512/cmbGS_EXPORT-FORMAT' /&gt;" Guid="83f421c3-9333-4370-bcc9-e6f9262e80d5" InformativeScreenshot="db160b9116dc46ebda4e7d4c7a5292b5.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' title='P10(*)/200 Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NSelectItem.Target>
                           </uix:NSelectItem>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Exportar a...'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click  - Exportar a..." sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7e59226-ac20-497b-b21c-9b5bb9beccac" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="622, 244, 89, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="0c70e933-f2f3-42af-bd93-a37c87c0f186" InformativeScreenshot="3e874253f899d4d415e2ef637c3f7eb1.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NClick.Target>
@@ -233,7 +233,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'C:\\TEMP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[Environment.CurrentDirectory + (&quot;/Data/Temp&quot;)]" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Dirección" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[Environment.CurrentDirectory + (&quot;/Data/Temp&quot;)]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="127, 67, 476, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="23fadccf-f20b-4860-a6d9-9736a09e2989" InformativeScreenshot="a34f89cd6ac22f4ca658cf1c0f69e959.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
@@ -246,12 +246,12 @@
                               <InArgument x:TypeArguments="x:String">["FAGLL03_" + now.ToString("dd-MM-yyyy") + ".csv"]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT_20250212_114425.…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[str_FileName]" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Nombre Fichero" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Text="[str_FileName]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="127, 96, 476, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="5e4da0e7-2c2e-421b-b04e-7d3acb04cffb" InformativeScreenshot="940930536890fd9e37e2eed10c4b2a3a.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crear'" sap:VirtualizedContainerService.HintSize="494,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Crear" sap:VirtualizedContainerService.HintSize="494,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaafb091-5d04-4254-86a0-990391a98650" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="583, 157, 37, 23" DesignTimeScaleFactor="1" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="2d48434e-d4a6-44ae-8e82-ddd521f9f641" InformativeScreenshot="bf8ce8760a0bfe6e0518dd0490e9b317.png" ScopeSelectorArgument="&lt;wnd app='sapguiserver.exe' cls='#32770' title='P10(3)/200 Grabar fichero' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NClick.Target>
@@ -321,6 +321,15 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Se ha producido un error al descargar el fichero de SAP&quot;]" />
+              <Throw Exception="[new SystemException(&quot;Se ha producido un error al descargar el fichero de SAP&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
