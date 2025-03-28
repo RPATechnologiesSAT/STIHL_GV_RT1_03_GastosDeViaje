@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1054,4934</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1793,4974</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadFile_SAP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,7 +114,7 @@
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="848,4869" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="848,4909" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_FileName" />
     </Sequence.Variables>
@@ -124,15 +124,15 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="786,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'DownloadFile_SAP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="786,4279" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="786,4319" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="DownloadFile_SAP" sap:VirtualizedContainerService.HintSize="748,4019" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="DownloadFile_SAP" sap:VirtualizedContainerService.HintSize="748,4059" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="686,3931" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10 (3) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="686,3971" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="c2ce1326-cf3e-4ea5-a558-8587c87c2c78" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -292,7 +292,7 @@
                               <InArgument x:TypeArguments="x:String">[("Data/Temp/") + str_FileName]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="494,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="494,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
                         </Sequence>
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
@@ -321,7 +321,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

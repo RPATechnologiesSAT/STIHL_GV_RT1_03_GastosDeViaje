@@ -44,14 +44,23 @@
 			"Name": "Layout",
             "Value": "/VISA",
             "Description": "Layout en filtro de transacción FAGLL03."
+		},
+		{
+			"Name": "CorreoDestinatario",
+            "Value": "maria.castellanos@stihl.es",
+            "Description": "Correo destinatario usuario negocio global."
 		}
     ],
 
     "Assets": [
         {
-            "Name": "NumeroSecuencial",
+            "Name": "GV_NumeroSecuencial",
             "Description": "Número secuencial encargado de numerar las asignaciones de los usuarios."
-        }
+        },
+		{
+			"Name":"GV_RutaDescargaFichero",
+			"Description":"Ruta descarga fichero de trabajo encargado de extraer usuarios con posibles compensaciones."
+		}
 
     ]
 }

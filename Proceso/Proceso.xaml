@@ -166,12 +166,20 @@
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FilterData_Excel - Invoke Workflow File (Proceso\ModulosProceso\Excel\FilterData_Excel.xaml)" sap:VirtualizedContainerService.HintSize="554,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\Excel\FilterData_Excel.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_FilePath">[str_FilePath]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencial">[in_Config("NumeroSecuencial").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencial">[in_Config("GV_NumeroSecuencial").ToString]</InArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_str_NumeroSecuencialEnd">[str_NumeroSecuencialEnd]</OutArgument>
                 <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_PartidasNoCompensables">[dt_PartidasNoCompensables]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="554,623" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NavigateTo_TransactionF-03_SAP - Invoke Workflow File (Proceso\ModulosProceso\SAPBC\NavigateTo_TransactionF-03_SAP.xaml)" sap:VirtualizedContainerService.HintSize="554,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\SAPBC\NavigateTo_TransactionF-03_SAP.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_str_TransactionName">[in_Config("TransaccionLiberar").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencialStart">[in_Config("GV_NumeroSecuencial").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencialEnd">[str_NumeroSecuencialEnd]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_str_Cuenta">[in_Config("CuentaMayor").ToString]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="554,614" sap2010:WorkflowViewState.IdRef="RetryScope_2">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
                   <Sequence sap:VirtualizedContainerService.HintSize="512,416" sap2010:WorkflowViewState.IdRef="Sequence_43">
@@ -186,7 +194,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:SetAsset TimeoutMS="{x:Null}" AssetName="NumeroSecuencial" DisplayName="Set Asset - Numero Secuencial" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[(CInt(str_NumeroSecuencialEnd) + 1).ToString]" />
+                      <ui:SetAsset TimeoutMS="{x:Null}" AssetName="GV_NumeroSecuencial" DisplayName="Set Asset - Numero Secuencial" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[(CInt(str_NumeroSecuencialEnd) + 1).ToString]" />
                     </Sequence>
                   </Sequence>
                 </ActivityAction>
@@ -195,14 +203,6 @@
                 <ActivityFunc x:TypeArguments="x:Boolean" />
               </ui:RetryScope.Condition>
             </ui:RetryScope>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NavigateTo_TransactionF-03_SAP - Invoke Workflow File (Proceso\ModulosProceso\SAPBC\NavigateTo_TransactionF-03_SAP.xaml)" sap:VirtualizedContainerService.HintSize="554,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\SAPBC\NavigateTo_TransactionF-03_SAP.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_TransactionName">[in_Config("TransaccionLiberar").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencialStart">[in_Config("NumeroSecuencial").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_NumeroSecuencialEnd">[str_NumeroSecuencialEnd]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_Cuenta">[in_Config("CuentaMayor").ToString]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
           </Sequence>
         </Sequence>
       </TryCatch.Try>

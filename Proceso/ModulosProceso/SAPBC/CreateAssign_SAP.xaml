@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,1956</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1793,3785</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SAP_CreateAssign_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -113,54 +113,54 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="716,1891" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1412,3720" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="654,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'CreteAssign_SAP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654,1466" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1350,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando módulo 'CreteAssign_SAP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1350,3295" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="SAP_CreateAssign" sap:VirtualizedContainerService.HintSize="616,1206" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="SAP_CreateAssign" sap:VirtualizedContainerService.HintSize="1312,3035" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="554,1118" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="430dd652-745f-4dfb-b35e-543bc621137b" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vista LM" sap:VirtualizedContainerService.HintSize="1250,2947" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="430dd652-745f-4dfb-b35e-543bc621137b" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,804" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1216,2593" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Selecc…'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430dd652-745f-4dfb-b35e-543bc621137b" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Selecc…'" sap:VirtualizedContainerService.HintSize="1154,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430dd652-745f-4dfb-b35e-543bc621137b" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="20, 305, 25, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(*)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='usr/cntlGRID1/shellcont/shell/shellcont[1]/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="9b77edb4-ad71-4771-a3f5-1aff4c50ac84" InformativeScreenshot="32b3e0daa077aa8a674d1bb41d8e1f87.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (*) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,525" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1154,1692" sap2010:WorkflowViewState.IdRef="RetryScope_1">
                     <ui:RetryScope.ActivityBody>
                       <ActivityAction>
-                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,325" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1112,1485" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Modificación en …'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430dd652-745f-4dfb-b35e-543bc621137b" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Modificación en …'" sap:VirtualizedContainerService.HintSize="1050,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430dd652-745f-4dfb-b35e-543bc621137b" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="320, 140, 22, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(*)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='tbar[1]/btn[45]' /&gt;" Guid="ece98947-414e-4f16-9eac-e2d907abe903" InformativeScreenshot="fbff15369a6096a2280f8244fd871e29.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (*) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10(1)/200 Valores nuevos" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b0ca474a-9976-4f3c-b4e5-1d89c8e235ca" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: P10(1)/200 Valores nuevos" sap:VirtualizedContainerService.HintSize="1050,1208" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b0ca474a-9976-4f3c-b4e5-1d89c8e235ca" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
@@ -215,7 +215,7 @@
                             </uix:NApplicationCard.TargetApp>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -227,6 +227,32 @@
                       <ActivityFunc x:TypeArguments="x:Boolean" />
                     </ui:RetryScope.Condition>
                   </ui:RetryScope>
+                  <uix:NCheckState DisplayName="Check App State 'Las modificaciones han …'" sap:VirtualizedContainerService.HintSize="1154,622" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="430dd652-745f-4dfb-b35e-543bc621137b" Timeout="300" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Las modificaciones han sido grabadas correctamente&quot;]" />
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;No se detecta pop-up tras 5 minutos de espera.&quot;]" />
+                        <Throw Exception="[new BusinessRuleException(&quot;Error al asignar gastos de compensación, no se detecta popup tras 5 minutos de espera.&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable CVScreenId="dc6ae724-e5f2-4f5b-b7b3-be043ab4db07" CvTextArea="52, 1009, 207, 14" CvTextArgument="Las modificaciones han sido grabadas." CvType="Text" DesignTimeRectangle="15, 997, 1906, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 Cuentas de mayor, lista de partidas individuales Vist*' /&gt;&lt;sap id='sbar' text='Las modificaciones han sido grabadas.' /&gt;" Guid="f8b6fc8a-e0e6-4c02-b293-3bd2049848ab" InformativeScreenshot="9a3ce18335b842b5ad7fc9aa1de1be85.png" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 Cuentas de mayor, lista de partidas individuales Vis*' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
                 </Sequence>
               </ActivityAction>
             </uix:NApplicationCard.Body>
@@ -237,7 +263,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="620,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1316,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -261,6 +287,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="654,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando módulo 'CreateAssign_SAP' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1350,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando módulo 'CreateAssign_SAP' -----&quot;]" />
   </Sequence>
 </Activity>
