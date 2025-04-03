@@ -150,9 +150,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Se cierran las aplicaiones para liberar el entorno de ejecucion" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="560,1888" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+    <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Se cierran las aplicaiones para liberar el entorno de ejecucion" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="560,1698" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
       <State.Entry>
-        <Sequence DisplayName="Final State" sap:VirtualizedContainerService.HintSize="514,1743" sap2010:WorkflowViewState.IdRef="Sequence_71">
+        <Sequence DisplayName="Final State" sap:VirtualizedContainerService.HintSize="514,1553" sap2010:WorkflowViewState.IdRef="Sequence_71">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,18 +246,10 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:IfElseIf>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,367" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-            <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_94">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmail - Invoke Workflow File (Proceso\ModulosProceso\Outlook\SendEmail.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\Outlook\SendEmail.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_NombreProyecto">Proceso Gastos de Viaje</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_MensajeBody" xml:space="preserve">Hola, 
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmail - Invoke Workflow File (Proceso\ModulosProceso\Outlook\SendEmail.xaml)" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\Outlook\SendEmail.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_NombreProyecto">Proceso Gastos de Viaje</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_MensajeBody" xml:space="preserve">Hola, 
 
 Adjuntamos fichero excel con el detalle de cargos en su tarjeta de crédito pendientes de justificar. 
 
@@ -269,13 +261,10 @@ En caso de duda con alguno de los cargos, contacta por favor con el departamento
 
 Un saludo, 
 Robot RPA</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_FicheroGastosNoCompensables">Data\Temp\GastosNoCompensables.xlsx</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_CorreoDestinatarioGlobal">[Config("CorreoDestinatario").ToString]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
-            </ui:CommentOut.Body>
-          </ui:CommentOut>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FicheroGastosNoCompensables">Data\Temp\GastosNoCompensables.xlsx</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CorreoDestinatarioGlobal">[Config("CorreoDestinatario").ToString]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\CloseAllApplications.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Framework\CloseAllApplications.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -993,7 +982,7 @@ Robot RPA</InArgument>
           <Transition.To>
             <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Proceso principal" DisplayName="Process State" sap:VirtualizedContainerService.HintSize="193,93" sap2010:WorkflowViewState.IdRef="State_5">
               <State.Entry>
-                <TryCatch DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="550,620" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                <TryCatch DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="550,700" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
