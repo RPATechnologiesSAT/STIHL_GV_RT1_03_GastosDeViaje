@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,5704</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1487,6925</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -57,6 +57,8 @@
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.Excel.Model</x:String>
       <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -122,7 +124,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1076,5639" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1076,6860" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_DepartamentoCliente" />
       <Variable x:TypeArguments="x:String" Name="str_LogoCliente" />
@@ -331,7 +333,7 @@
     </Assign>
     <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_Empleados]" DisplayName="Read Range Workbook - Listado empleados" sap:VirtualizedContainerService.HintSize="1014,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\FicheroEmpleados\USUARIOS.xlsx" />
     <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_GastosNoCompensables]" DisplayName="Read Range Workbook - Listado empleados" sap:VirtualizedContainerService.HintSize="1014,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="Data\Temp\Liberadas.xlsx" />
-    <TryCatch DisplayName="Try Catch - Gastos no compensables usuarios" sap:VirtualizedContainerService.HintSize="1014,3279" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch - Gastos no compensables usuarios" sap:VirtualizedContainerService.HintSize="1014,4500" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -339,19 +341,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="976,3019" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="976,4240" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Empleados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="914,2931" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Empleados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="914,4152" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="880,2744" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="880,3965" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="dt_AuxGastosNoCompensables" />
                   </Sequence.Variables>
@@ -360,6 +362,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="818,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Analizando si el empleado &quot; + CurrentRow(&quot;Empleado - Identificador&quot;).ToString + &quot; tiene correo pendiente de notificación.&quot;]" />
                   <ui:FilterDataTable DataTable="[dt_GastosNoCompensables]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="818,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_AuxGastosNoCompensables]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
@@ -384,9 +387,9 @@
                       <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt_AuxGastosNoCompensables">[dt_AuxGastosNoCompensables]</InOutArgument>
                     </ui:InvokeCode.Arguments>
                   </ui:InvokeCode>
-                  <If Condition="[dt_AuxGastosNoCompensables.Rows.Count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="818,2266" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[dt_AuxGastosNoCompensables.Rows.Count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="818,3314" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="784,2002" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="784,3050" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -411,15 +414,18 @@
                             </scg:List>
                           </ui:FilterDataTable.SelectColumns>
                         </ui:FilterDataTable>
-                        <If Condition="[dt_AuxGastosNoCompensables.Rows.Count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="722,1721" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If Condition="[dt_AuxGastosNoCompensables.Rows.Count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="722,2769" sap2010:WorkflowViewState.IdRef="If_2">
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,1308" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,2356" sap2010:WorkflowViewState.IdRef="Sequence_12">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,173" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[CurrentRow(&quot;Empleado - Identificador&quot;).ToString + &quot; tiene gastos pendientes de notificación, creando Excel.&quot;]" />
                               <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_AuxGastosNoCompensables]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="626,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Hoja1" WorkbookPath="[&quot;Data\Temp\Gasto No Compensables - &quot;+CurrentRow(&quot;Empleado - Identificador&quot;).ToString+&quot;.xlsx&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Expandiendo columnas Excel&quot;]" />
+                              <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="626,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
                               <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,910" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                                 <ueab:ExcelProcessScopeX.Body>
                                   <ActivityAction x:TypeArguments="ui:IExcelProcess">
@@ -473,13 +479,11 @@
                                   <InArgument x:TypeArguments="x:String">["Data\Temp\Gasto No Compensables - "+CurrentRow("Empleado - Identificador").ToString+".xlsx"]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <umab:OutlookApplicationCard Account="roboticprocessautomation.rpa1@stihl.es" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="626,48" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_3">
-                                <umab:OutlookApplicationCard.Body>
-                                  <ActivityAction x:TypeArguments="um:IMailQuickHandle">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,173" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Columnas Excel expandidas correctamente, asignando ruta del fichero de gastos comensables (&quot; + FicheroGastosCompensables + &quot;).&quot;]" />
+                              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="626,455" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                                <ui:RetryScope.ActivityBody>
+                                  <ActivityAction>
+                                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -501,14 +505,11 @@
                                       </ui:SendOutlookMail>
                                     </Sequence>
                                   </ActivityAction>
-                                </umab:OutlookApplicationCard.Body>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </umab:OutlookApplicationCard>
+                                </ui:RetryScope.ActivityBody>
+                                <ui:RetryScope.Condition>
+                                  <ActivityFunc x:TypeArguments="x:Boolean" />
+                                </ui:RetryScope.Condition>
+                              </ui:RetryScope>
                             </Sequence>
                           </If.Then>
                           <If.Else>
@@ -541,7 +542,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="788,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="980,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -552,20 +553,19 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error al enviar el correo electronico&quot;]" />
-              <Throw Exception="[new Exception(&quot;Error al enviar el correo electronico&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error al enviar el correo electronico&quot;]" />
             </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <TryCatch DisplayName="Try Catch - Gastos globales compensados y no compensados" sap:VirtualizedContainerService.HintSize="822,1166" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch - Gastos globales compensados y no compensados" sap:VirtualizedContainerService.HintSize="1014,1166" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="str_" />
         <Variable x:TypeArguments="x:String" Name="str_GastosNoCompensados" />

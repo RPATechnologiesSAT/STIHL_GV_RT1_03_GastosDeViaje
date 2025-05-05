@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1409,2807</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1487,2807</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SP_DescargaFichero_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -157,9 +157,9 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="954,710" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V4">
+                          <uix:NCheckState DisplayName="Check App State 'Descargar'" sap:VirtualizedContainerService.HintSize="954,710" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,270" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -167,7 +167,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
                                   <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" CVScreenId="9a79d9e9-59f8-483a-bdf8-bf27c640ebef" CvTextArea="1213, 226, 64, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1182, 217, 102, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Descargar' tag='SPAN' /&gt;" Guid="bec4b956-8d29-4b88-b3da-a9464f309347" InformativeScreenshot="f7e7d7c9da9ee1c729a7b6c9f893fa32.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" CVScreenId="5899d6ea-9e65-4e6b-8ad3-bf90cf6258c8" CvTextArea="248, 640, 64, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1153, 217, 102, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='*Descargar' tag='BUTTON' /&gt;" Guid="c8913fc3-0da6-4613-ad32-4390774081df" InformativeScreenshot="22712e62c6883a4972a09f727b42ca0b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
                               </Sequence>
@@ -181,18 +181,18 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
                                   <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" DesignTimeRectangle="1096, 270, 41, 40" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='appRoot' tag='SPAN' class='ms-Button-flexContainer flexContainer-158' idx='5' /&gt;" Guid="83e47e01-1ec8-41b3-828a-bda612de1a63" InformativeScreenshot="3c1509e44ca6c39b031f93349e7160c4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" DesignTimeRectangle="1353, 217, 32, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='Más comandos' /&gt;" Guid="0ee11e7b-753c-4a95-9120-d79914e34abc" InformativeScreenshot="40c75cc4207d2ff52ccb483e4e156b8b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
                                   <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" CVScreenId="e3c833b8-abd7-4729-9087-54e0b0c8a221" CvTextArea="1130, 422, 80, 20" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1092, 407, 247, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Descargar' aria-role='menuitem' tag='BUTTON' /&gt;" Guid="8f08cd70-df2d-4200-8875-a28e1e226576" InformativeScreenshot="b54fd912b604b44d2c9abda9d23ab36c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                    <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" CVScreenId="5899d6ea-9e65-4e6b-8ad3-bf90cf6258c8" CvTextArea="248, 640, 64, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1153, 217, 102, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='*Descargar' tag='BUTTON' /&gt;" Guid="c8913fc3-0da6-4613-ad32-4390774081df" InformativeScreenshot="22712e62c6883a4972a09f727b42ca0b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
-                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Descargar' tag='SPAN' /&gt;" Guid="41c452fa-ea5a-4f8d-b63e-95cfe52927a1" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector" />
+                              <uix:TargetAnchorable BrowserURL="stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx" CVScreenId="7131c8f1-4309-4766-b247-d155042a4183" CvTextArea="248, 640, 64, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1153, 217, 102, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='Descargar' idx='1' /&gt;" Guid="f31d19b6-3d1c-408e-a1d1-b506060d0af7" InformativeScreenshot="d32b4b3295eaf241384482160cd2bc69.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Guardar'" sap:VirtualizedContainerService.HintSize="954,180" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a9ae7e0-6786-404f-a15d-59c783191d36" Version="V4">
@@ -217,11 +217,11 @@
               <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVDhPY0AHzDkFBkC8H4j/I2EQ3wCqBDcAKQLi91BN6Bgkjt8QoIL7SBqw4ftQpQjA3Nz+Hoj/48VNbciGOEC1QgBWDVgwo6UNYQMmnjz9Hxkgy/F4+f6Xmr0Qhu8DcQCGASAAMgTETtq0BS4Owry+AcgGwHAAigEXXrwEG7Lw4qX/ypOnEWPAfRQDhLv7/zcePPz//fcfYAziEzDgP4oBIGfDDAEBo1nzSDMAZCsMHHjwEC4OwqKRcdgMQPUCPiydnPFffvEqdAPAgUgwIbE2toINUFy2FqYREY3oAKjQAaQYHWtOnfPf/NgF1ESEDQAVCQDxfSAGaUDGIDEBqDL8AKjQAIjPQzWCMIiNJScyMAAAIGu1wTJAuKMAAAAASUVORK5CYII=" InformativeScreenshot="4bbeb061f590a9888c247771f7416cbc.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - RPA - Todos los documentos' /&gt;" Title="ES + PT Iberican_FCI - RPA - Todos los documentos" Url="[in_RutaFichero]" Version="V1" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
-          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="Data\FicheroEmpleados" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="546,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[str_FicheroEmpleado.ToString]" />
+          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="Data\FicheroEmpleados" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="1146,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[str_FicheroEmpleado.ToString]" />
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="612,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1212,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -245,6 +245,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="646,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizado módulo 'SP_DescargaFichero' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1246,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizado módulo 'SP_DescargaFichero' -----&quot;]" />
   </Sequence>
 </Activity>
